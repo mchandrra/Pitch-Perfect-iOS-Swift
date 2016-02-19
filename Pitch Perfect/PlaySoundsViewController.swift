@@ -1,5 +1,5 @@
 //
-//  playSoundsViewController.swift
+//  PlaySoundsViewController.swift
 //  Pitch Perfect
 //
 //  Created by Sri Chandra Mallipeddi on 2/17/16.
@@ -9,20 +9,23 @@
 import UIKit
 import AVFoundation
 
-class playSoundsViewController: UIViewController {
+class PlaySoundsViewController: UIViewController {
 
     var audioPlayer:AVAudioPlayer!
+    var receivedAudio:RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-            let filePathUrl = NSURL.fileURLWithPath(filePath)
-            audioPlayer = try!
-            AVAudioPlayer(contentsOfURL: filePathUrl)
-            audioPlayer.enableRate = true
-        }else {
-            print("The filepath is empty")
-        }
+//        if let filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
+//            let filePathUrl = NSURL.fileURLWithPath(filePath)
+//            audioPlayer = try!
+//            AVAudioPlayer(contentsOfURL: filePathUrl)
+//            audioPlayer.enableRate = true
+//        }else {
+//            print("The filepath is empty")
+//        }
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
+        audioPlayer.enableRate = true
 
         // Do any additional setup after loading the view.
     }

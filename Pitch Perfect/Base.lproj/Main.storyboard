@@ -8,7 +8,7 @@
         <!--Play Sounds View Controller-->
         <scene sceneID="ZiA-w0-AIU">
             <objects>
-                <viewController id="UdI-qz-MLC" customClass="playSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UdI-qz-MLC" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b4I-up-s3f"/>
                         <viewControllerLayoutGuide type="bottom" id="sC0-j3-zQh"/>
@@ -90,7 +90,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -113,7 +113,6 @@
                                 <state key="normal" image="stopbutton"/>
                                 <connections>
                                     <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJv-UN-le8"/>
-                                    <segue destination="UdI-qz-MLC" kind="show" id="0Vi-2g-lIE"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGN-GN-iX3">
@@ -170,6 +169,7 @@
                         <outlet property="recordButton" destination="GTt-ZJ-9yV" id="jYh-jA-d0C"/>
                         <outlet property="recordingInProgress" destination="tGN-GN-iX3" id="sY6-3x-gB0"/>
                         <outlet property="stopButton" destination="3cS-oq-p88" id="Yyw-Rr-8uQ"/>
+                        <segue destination="UdI-qz-MLC" kind="show" identifier="stopRecording" id="LuZ-cr-tTi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
