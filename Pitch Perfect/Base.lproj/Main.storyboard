@@ -40,28 +40,54 @@
                                     <action selector="stopPlayingAudio:" destination="UdI-qz-MLC" eventType="touchUpInside" id="taF-CA-2Vj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCu-Zz-Au8">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="UdI-qz-MLC" eventType="touchUpInside" id="GNO-IW-ihj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMe-O8-x1A">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="darthvader"/>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="UdI-qz-MLC" eventType="touchUpInside" id="6UN-N7-XIP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.92862135171890259" green="0.96647673845291138" blue="0.8708881139755249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Jg9-Kg-tml" firstAttribute="leading" secondItem="Nxg-j5-w63" secondAttribute="leadingMargin" constant="30" id="1ut-RH-WCe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bvQ-Y8-IY2" secondAttribute="trailing" constant="30" id="6v8-hL-wzS"/>
                             <constraint firstItem="exw-2u-lfG" firstAttribute="centerX" secondItem="Nxg-j5-w63" secondAttribute="centerX" id="Aua-JA-muk"/>
                             <constraint firstItem="Jg9-Kg-tml" firstAttribute="top" secondItem="b4I-up-s3f" secondAttribute="bottom" constant="50" id="EKT-pm-I5r"/>
+                            <constraint firstItem="VMe-O8-x1A" firstAttribute="top" secondItem="b4I-up-s3f" secondAttribute="bottom" constant="186" id="FB6-37-gJG"/>
                             <constraint firstItem="sC0-j3-zQh" firstAttribute="top" secondItem="exw-2u-lfG" secondAttribute="bottom" constant="50" id="Gob-ZZ-IXo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VMe-O8-x1A" secondAttribute="trailing" constant="30" id="Lhg-7q-gul"/>
+                            <constraint firstItem="sCu-Zz-Au8" firstAttribute="top" secondItem="b4I-up-s3f" secondAttribute="bottom" constant="186" id="QkD-JC-Qkd"/>
                             <constraint firstItem="bvQ-Y8-IY2" firstAttribute="top" secondItem="b4I-up-s3f" secondAttribute="bottom" constant="50" id="hAi-8h-Mfj"/>
+                            <constraint firstItem="sCu-Zz-Au8" firstAttribute="leading" secondItem="Nxg-j5-w63" secondAttribute="leadingMargin" constant="30" id="hTa-xu-VG5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Jg9-Kg-tml"/>
                                 <exclude reference="bvQ-Y8-IY2"/>
                                 <exclude reference="exw-2u-lfG"/>
+                                <exclude reference="sCu-Zz-Au8"/>
+                                <exclude reference="VMe-O8-x1A"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="1ut-RH-WCe"/>
                                 <exclude reference="EKT-pm-I5r"/>
+                                <exclude reference="QkD-JC-Qkd"/>
+                                <exclude reference="hTa-xu-VG5"/>
                                 <exclude reference="6v8-hL-wzS"/>
                                 <exclude reference="hAi-8h-Mfj"/>
+                                <exclude reference="FB6-37-gJG"/>
+                                <exclude reference="Lhg-7q-gul"/>
                                 <exclude reference="Aua-JA-muk"/>
                                 <exclude reference="Gob-ZZ-IXo"/>
                             </mask>
@@ -71,12 +97,18 @@
                                 <include reference="Jg9-Kg-tml"/>
                                 <include reference="bvQ-Y8-IY2"/>
                                 <include reference="exw-2u-lfG"/>
+                                <include reference="sCu-Zz-Au8"/>
+                                <include reference="VMe-O8-x1A"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="1ut-RH-WCe"/>
                                 <include reference="EKT-pm-I5r"/>
+                                <include reference="QkD-JC-Qkd"/>
+                                <include reference="hTa-xu-VG5"/>
                                 <include reference="6v8-hL-wzS"/>
                                 <include reference="hAi-8h-Mfj"/>
+                                <include reference="FB6-37-gJG"/>
+                                <include reference="Lhg-7q-gul"/>
                                 <include reference="Aua-JA-muk"/>
                                 <include reference="Gob-ZZ-IXo"/>
                             </mask>
@@ -197,6 +229,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="rabbit" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
